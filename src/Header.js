@@ -19,7 +19,7 @@ const Header = () => {
         }}>
         <Image
           className="w-8 h-8 "
-          source={require('../../assets/images/ Mindful_Bckgrd_Img')}
+          source={require('./assets/images/Mindful_Bckgrd_Img.jpg')}
         />
       </TouchableOpacity>
     </View>

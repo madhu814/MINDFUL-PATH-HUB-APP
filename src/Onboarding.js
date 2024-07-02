@@ -10,7 +10,7 @@ const Onboarding = ({navigation}) => {
       <Animatable.Image
         animation="zoomIn" // Adding a zoom-in animation
         duration={2000}   // Duration of the animation
-        source={require('../assets/images//Mindful_Bckgrd_Img.jpg')}
+        source={require('./assets/images//Mindful_Bckgrd_Img.jpg')}
         resizeMode="contain"
         style={styles.image}
       />
@@ -19,13 +19,19 @@ const Onboarding = ({navigation}) => {
         <Text style={styles.mainText}>
         Welcomes 
         </Text>
-        <Text style={styles.secondaryText}> <Text>You to your safe space.Let's navigate your path to mental clarity together.</Text></Text>
+       
+      </Animatable.View>
+      <Animatable.Image
+        animation="zoomIn" // Adding a zoom-in animation
+        duration={2000}   // Duration of the animation
+        source={require('./assets/images//therapy.jpg')}
+        resizeMode="contain"
+        style={styles.image}
+      />
+       <Text style={styles.secondaryText}> <Text>You to your safe space.Let's navigate your path to mental clarity together.</Text></Text>
         <Text style={styles.subtitle}>
         
         </Text>
-      </Animatable.View>
-      
-
       <View style={styles.buttonContainer}>
         <Animatable.View animation="bounceInUp" delay={1000}>
           <TouchableOpacity
@@ -52,8 +58,8 @@ const styles = StyleSheet.create({
     position: 'relative',
     justifyContent: 'flex-start',
     paddingBottom:3,
-    height: 150,
-    width: 200,
+    height: 250,
+    width: 400,
     opacity: 0.8,
     marginTop: 0,  // Ensure no top margin on the image
     marginBottom: 0,  // Remove bottom margin to allow text to be closer
@@ -64,21 +70,22 @@ const styles = StyleSheet.create({
     paddingTop: 0,  
   },
   mainText: {
-    fontSize: 20,
-    color: '#FFBF00',
+    fontSize: 40,
+    color: '#6200EE',
     fontWeight: 'bold',
     fontFamily:'Roboto',
     marginTop: 0, 
     
   },
   secondaryText: {
-    color: 'black',
+    fontSize: 20,
+    color: '#3700B3',
     textAlign:'center',
-    marginTop: 0, 
+    marginTop: 23, 
   },
   subtitle: {
     marginTop: 20,
-    fontSize: 16,
+    fontSize: 20,
     color: 'black',
     fontWeight: 'bold'
   },
@@ -89,12 +96,13 @@ const styles = StyleSheet.create({
     paddingBottom: 30,  // Adds some padding at the bottom
   },
   button: {
-    backgroundColor: '#FFBF00',
+    backgroundColor: '#6200EE',
     paddingVertical: 12,
     paddingHorizontal: 24,
     borderRadius: 30,
     marginBottom: 5,
     justifyContent:'flex-end',
+    boxshadow : 3 , 
   },
   buttonText: {
     color: 'white',
