@@ -10,7 +10,7 @@ const Onboarding = ({navigation}) => {
       <Animatable.Image
         animation="zoomIn" // Adding a zoom-in animation
         duration={2000}   // Duration of the animation
-        source={require('./assets/images//Mindful_Bckgrd_Img.jpg')}
+        source={require('../assets/images//Mindful_Bckgrd_Img.jpg')}
         resizeMode="contain"
         style={styles.image}
       />
@@ -24,7 +24,7 @@ const Onboarding = ({navigation}) => {
       <Animatable.Image
         animation="zoomIn" // Adding a zoom-in animation
         duration={2000}   // Duration of the animation
-        source={require('./assets/images//therapy.jpg')}
+        source={require('../assets/images//therapy.jpg')}
         resizeMode="contain"
         style={styles.image}
       />

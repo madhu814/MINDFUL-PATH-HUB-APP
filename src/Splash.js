@@ -8,7 +8,7 @@ const Splash = () => {
       <Animatable.Image
         animation="zoomInUp"
         duration={1500}
-        source={require('./assets/images/Mindful_Bckgrd_Img.jpg')}
+        source={require('../assets/images/Mindful_Bckgrd_Img.jpg')}
         style={styles.image}
       />
       </View>

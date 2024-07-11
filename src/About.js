@@ -16,7 +16,7 @@ const App = () => {
         <Animatable.Image
           animation="zoomIn" // Adding a zoom-in animation
           duration={2000} // Duration of the animation
-          source={require('./assets/images//Mindful_Bckgrd_Img.jpg')}
+          source={require('../assets/images//Mindful_Bckgrd_Img.jpg')}
           resizeMode="contain"
           style={styles.image}
         />
@@ -28,7 +28,7 @@ const App = () => {
           <Text style={styles.mainText}>Shefali Agrawal</Text>
         </Animatable.View>
         <Animatable.Image
-          source={require('./assets/images//maam.jpg')}
+          source={require('../assets/images//maam.jpg')}
           resizeMode="contain"
           style={styles.image}
         />
