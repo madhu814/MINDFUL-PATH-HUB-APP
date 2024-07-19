@@ -36,7 +36,7 @@ const Onboarding = ({navigation}) => {
         <Animatable.View animation="bounceInUp" delay={1000}>
           <TouchableOpacity
             style={styles.button}
-            onPress={() => navigation.navigate('Therapy')}>
+            onPress={() => navigation.navigate('Login')}>
             <Text style={styles.buttonText}>Let's Start healing today</Text>
           </TouchableOpacity>
         </Animatable.View>

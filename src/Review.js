@@ -1,7 +1,7 @@
 import React from 'react';
 import {ScrollView, StyleSheet, Text, View, Image} from 'react-native';
 
-const Placements = () => {
+const Review = () => {
   return (
     <ScrollView contentContainerStyle={styles.scrollView}>
       <View style={styles.header}>
@@ -12,7 +12,7 @@ const Placements = () => {
           <View style={styles.imageWrapper}>
             <Image
               style={styles.image}
-              source={require('./assets/images/Mindful_Bckgrd_Img.jpg')}
+              
               resizeMode="cover"
             />
           </View>
@@ -41,7 +41,7 @@ const Placements = () => {
           <View style={styles.imageWrapper}>
             <Image
               style={styles.image}
-              source={require('./assets/images/Mindful_Bckgrd_Img.jpg')}
+              source={require('../assets/images/Mindful_Bckgrd_Img.jpg')}
               resizeMode="cover"
             />
           </View>
@@ -62,7 +62,7 @@ const Placements = () => {
           <View style={styles.imageWrapper}>
             <Image
               style={styles.image}
-              source={require('./assets/images/Mindful_Bckgrd_Img.jpg')}
+              source={require('../assets/images/Mindful_Bckgrd_Img.jpg')}
               resizeMode="cover"
             />
           </View>
@@ -80,7 +80,7 @@ const Placements = () => {
           <View style={styles.imageWrapper}>
             <Image
               style={styles.image}
-              source={require('./assets/images/Mindful_Bckgrd_Img.jpg')}
+              source={require('../assets/images/Mindful_Bckgrd_Img.jpg')}
               resizeMode="cover"
             />
           </View>
@@ -176,4 +176,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Placements;
+export default Review;
