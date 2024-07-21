@@ -39,11 +39,11 @@ const App = () => {
             university. and is a certified "Bach Flower Therapist & Trainer"
             from VIORNATURALS, Banglore. She is Annamala a certified counselor
             from university Chidambaram in Chennai and practicing successfully
-            over 13 years She is a certified "clinical Mypnotherapist from
+            over 13 years .She is a certified "clinical Hypnotherapist from
             California Hypnosis Institule, USA She is a qualified professional
             with 5 years of experience in Defence as a Marital Discord
             Counselor" and honoured to be in the Selection Panel of various
-            Institutions of Thansi as a psychologists It was sofali's
+            Institutions of Jhansi as a psychologists It was sofali's
             empowerment and a own journey of quest to seek to life's deepest
             mysteries. which brought her on to the path of "Alternative Realing
             practices. She firmly believes that these therapies are scientific
@@ -66,7 +66,7 @@ const App = () => {
             dedication to help and empower people around her has led her to
             embrace "Bach Flower Therapy, Hypnotherapy and alternative methods
             not just as a fool but as a companion which she now feels confident
-            to introduce and share with them
+            to introduce and share with them.
           </Text>
         </Text>
         
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'white',
+    backgroundColor: '#F1E0CC',
     paddingLeft: 20,
     paddingRight: 20,
   },
@@ -102,7 +102,8 @@ const styles = StyleSheet.create({
   mainText: {
     fontSize: 40,
     color: '#6200EE',
-    fontWeight: 'bold',
+    fontWeight: 'light',
+    fontStyle:'italic',
     fontFamily: 'Roboto',
     marginTop: 0,
   },

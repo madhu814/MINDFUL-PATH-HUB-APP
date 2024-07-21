@@ -16,7 +16,7 @@ const App = () => {
     <View style={styles.container}>
       <ScrollView>
         <View style={styles.header}>
-          <Text style={styles.headerText}>Therapies</Text>
+          <Text style={styles.headerText}>Counselling and Therapies</Text>
         </View>
         {subjects.map(subject => (
           <View key={subject.key} style={styles.card}>
@@ -34,11 +34,14 @@ const App = () => {
 <View style={styles.footer}>
   <Text style={styles.footerText}>Home</Text>
   <Text style={styles.footerText}>Search</Text>
+  <TouchableOpacity onPress={() => navigation.navigate('Review')}>
+    <Text style={styles.footerText}>Reviews</Text>
+  </TouchableOpacity>
   <TouchableOpacity onPress={() => navigation.navigate('Booking')}>
     <Text style={styles.footerText}>Booking</Text>
   </TouchableOpacity>
-  <TouchableOpacity onPress={() => navigation.navigate('PersonalDetails')}>
-    <Text style={styles.footerText}>Account</Text>
+  <TouchableOpacity onPress={() => navigation.navigate('About')}>
+    <Text style={styles.footerText}>About</Text>
   </TouchableOpacity>
 </View>
 </View>
