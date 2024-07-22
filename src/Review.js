@@ -13,7 +13,9 @@ const Review = () => {
             <Image
               style={styles.image}
               
+              source={require('../assets/images/Mindful_Bckgrd_Img.jpg')}
               resizeMode="cover"
+              
             />
           </View>
           <View style={styles.textWrapper}>
