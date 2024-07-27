@@ -119,7 +119,7 @@ const Review = () => {
 
 const styles = StyleSheet.create({
   scrollView: {
-    flex: 1,
+    
     backgroundColor: 'white',
     overflow:"scroll" ,
   },
