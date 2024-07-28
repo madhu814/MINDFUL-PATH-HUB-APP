@@ -35,46 +35,46 @@ const About = () => {
         />
         <Text style={styles.detail2}>
           {' '}
-          Shefali is a Post Graduate and M.Phil in Psychology from CSJM
-          university. And is a certified "Bach Flower Therapist & Trainer" from
-          VIORNATURALS, Banglore.
+        Shefali is a Post Graduate and M.Phil in Psychology from CSJM
+          university. She is a certified "Bach Flower Therapist & Trainer" from
+          VIOR NATURALS, Bangalore.
         </Text>
 
         <Text style={styles.detail2}>
-          She is a certified counselor from Annamala university Chidambaram
-          Chennai and practicing successfully over 13 years .
+          She is a certified counselor from Annamalai University Chidambaram in
+          Chennai and practicing successfully over 13 years.
         </Text>
 
         <Text style={styles.detail2}>
           {' '}
-          She is a certified "clinical Hypnotherapist" from California Hypnosis
-          Institute, USA{' '}
+          She is a certified "Clinical Hypnotherapist" from California Hypnosis
+          Institute, USA.{' '}
         </Text>
 
         <Text style={styles.detail2}>
           She is a qualified professional with 5 years of experience in Defence
-          as a Marital Discord Counselor" and honoured to be in the ''Selection
-          Panel'' of various Institutions of jhansi as a psychologists{' '}
+          as a Marital Discord Counselor" and honoured to be in the 'Selection
+          Panel' of various Institutions of Jhansi as a psychologist.{' '}
         </Text>
 
         <Text style={styles.detail2}>
           {' '}
-          It was shefali's own journey of empowerment and a quest to seek to
-          life's deepest mysteries. which brought her on to the path of
+          It was Shefali's own journey of empowerment and a quest to seek answers to
+          life's deepest mysteries, which brought her on to the path of
           "Alternative healing practices". She firmly believes that these
           therapies are scientific and can transform any individual as long as
-          there is intent to do so{' '}
+          there is intent to do so.{' '}
         </Text>
 
         <Text style={styles.detail2}>
-          She is a mother, a successful, a professional, a homemaker and a
+          She is a mother, a successful professional, a homemaker and a
           therapist. She plays all her roles with clan. What makes her stand out
           from others is her compassion, an immaculate sense of intution and her
           ability to connect with people from all walks of life, helping them to
           overcome their challenges.
         </Text>
-        <Text style={styles.title}>Shefali Vaish agarwal@gmail.com</Text>
-        <Text style={styles.title}>Mob-+919450980124</Text>
+        <Text style={styles.title}>Shefali.Vaish.agarwal@gmail.com</Text>
+        <Text style={styles.title}>Mob +919450980124</Text>
       </View>
       <View style={styles.View}>
         <Text style={styles.name3}>Therapy Process</Text>
@@ -85,7 +85,7 @@ const About = () => {
         <Text style={styles.name2}>Explore Therapy</Text>
         <Text style={styles.detail3}>
           {' '}
-          You can reach out to therapists to inquire about the approach and
+          You can reach out to me to inquire about the approach and
           potential benefits of Therapy in accordance with your personal needs.
         </Text>
         <Image
@@ -104,7 +104,7 @@ const About = () => {
           source={require('../assets/images/selfcare.png')}
           style={styles.image3}
         />
-        <Text style={styles.name2}>potential benefits of Therapies</Text>
+        <Text style={styles.name2}>Therapies and their Impact</Text>
         <Text style={styles.detail3}>
           Mental health therapy can be done in a variety of settings. Individual
           therapy is for one person and a mental health professional, while
