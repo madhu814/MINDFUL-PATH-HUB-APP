@@ -1,106 +1,117 @@
 import React from 'react';
-import { ScrollView, View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
 
-const App = () => {
-  const subjects = [
-    { key: 'Breathing Therapy', title: 'Breathing Therapy' },
-    { key: 'Hypnotherapy', title: 'Hypnotherapy' },
-    { key: 'Bach Therapy', title: 'Bach Therapy' },
-    { key: 'Psychodynamic Therapies', title: 'Psychodynamic Therapies' },
-    { key: 'Cognitive Behavioral Therapy (CBT)', title: 'Cognitive Behavioral Therapy (CBT)' },
-  ];
-  const navigation = useNavigation();
+
+
+// Then use it in the ImageBackground component
+
+
+import { StyleSheet, View, Text,  FlatList, TouchableOpacity,Image} from 'react-native';
+
+
+
+const data = [
+  { id: '1', title: 'Breathing Therapy', image: require('../assets/images/BreathingTherapy.jpg') },
+  { id: '2', title: 'Hypnotherapy', image: require('../assets/images/Hypnotherapyy.jpg') },
+  { id: '3', title: 'Bach Therapy', image: require('../assets/images/BachFlowerTherapy.jpg') },
+  { id: '4', title: 'Psychosomatic Therapy', image: require('../assets/images/PsychosomaticTherapy.jpg') },
+  { id: '5', title: 'Cognitive Behaviourial Therapy (CBT)', image: require('../assets/images/CognitiveBehaviourialTherapy.jpg') },
+  { id: '6', title: 'Marriage Counselling', image: require('../assets/images/MarriageCounseling.jpg') },
+];
+
+const Therapy = () => {
+
+  const renderItem = ({ item }) => (
+    <TouchableOpacity style={styles.item}>
+      <Image source={item.image} style={styles.itemImage} />
+      <Text style={styles.itemText}>{item.title}</Text>
+    </TouchableOpacity>
+  );
 
   return (
+  
+     
     <View style={styles.container}>
-      <ScrollView>
-        <View style={styles.header}>
-          <Text style={styles.headerText}>Counselling and Therapies</Text>
-        </View>
-        {subjects.map(subject => (
-          <View key={subject.key} style={styles.card}>
-            
-            <TouchableOpacity style={styles.button}>
-              <Text style={styles.buttonText}>{subject.title}</Text>
-            </TouchableOpacity>
-          </View>
-        ))}
-      </ScrollView>
-   
+       <Text style={styles.headingText}>Counselling and Therapies</Text>
+      <FlatList
+        data={data}
+        renderItem={renderItem}
+        keyExtractor={item => item.id}
+        numColumns={2}
+        contentContainerStyle={styles.flatList}
+      />
+  
     
- 
+    <View style={styles.footer}>
+    <Text style={styles.footerText}>Home</Text>
+    <Text style={styles.footerText}>Search</Text>
+    <TouchableOpacity onPress={() => navigation.navigate('Review')}>
+      <Text style={styles.footerText}>Reviews</Text>
+    </TouchableOpacity>
+    <TouchableOpacity onPress={() => navigation.navigate('Booking')}>
+      <Text style={styles.footerText}>Booking</Text>
+    </TouchableOpacity>
+    <TouchableOpacity onPress={() => navigation.navigate('About')}>
+      <Text style={styles.footerText}>About</Text>
+    </TouchableOpacity>
+  </View>
+  </View>
 
-<View style={styles.footer}>
-  <Text style={styles.footerText}>Home</Text>
-  <Text style={styles.footerText}>Search</Text>
-  <TouchableOpacity onPress={() => navigation.navigate('Review')}>
-    <Text style={styles.footerText}>Reviews</Text>
-  </TouchableOpacity>
-  <TouchableOpacity onPress={() => navigation.navigate('Booking')}>
-    <Text style={styles.footerText}>Booking</Text>
-  </TouchableOpacity>
-  <TouchableOpacity onPress={() => navigation.navigate('About')}>
-    <Text style={styles.footerText}>About</Text>
-  </TouchableOpacity>
-</View>
-</View>
- );
-};
+   );
+  };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'white',
-  },
-  header: {
-    backgroundColor: 'purple',
-    padding: 20,
-    margin :20,
-    alignItems: 'center',
-    borderRadius :20,
-  },
-  headerText: {
-    color: 'white',
-    fontSize: 20,
-  },
-  card: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    padding: 10,
-    marginHorizontal: 10,
-    marginVertical: 5,
-    backgroundColor: '',
-    borderRadius: 10,
-  },
-  button: {
-    borderRadius: 10,
-    padding: 20,
-    margin :10,
-    backgroundColor: '#FFBF00',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flex: 1,
-    
+  headingText:
+    {
+        fontSize: 24,
+        fontWeight:'bold',
+       paddingTop:3,
+        paddingLeft:50,
+        paddingVertical:20
     },
-  buttonText: {
-    color: 'black',
-    fontSize: 16,
+  
+    container: {
+    flex: 1,
+    backgroundColor: '#f0f0f0',
+    paddingTop: 50,
+    paddingHorizontal: 10,
     
   },
-  notesText: {
-    color: 'white',
-    fontSize: 12,
+  flatList: {
+    justifyContent: 'space-between',
+  },
+  item: {
+    flex: 1,
+    margin: 10,
+    backgroundColor: '#fff',
+    borderRadius: 10,
+    alignItems: 'center',
+    padding: 20,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 3,
+    elevation: 5,
+  },
+  itemImage: {
+    width: 60,
+    height: 60,
+    marginBottom: 10,
+  },
+  itemText: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    textAlign: 'center',
   },
   footer: {
     flexDirection: 'row',
     justifyContent: 'space-around',
     padding: 10,
     backgroundColor: 'purple',
+    
   },
   footerText: {
     color: 'white',
   },
 });
 
-export default App;
+export default Therapy;
