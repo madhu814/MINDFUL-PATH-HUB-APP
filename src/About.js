@@ -2,7 +2,7 @@ import {StyleSheet, Text, View, ScrollView, Image} from 'react-native';
 import React from 'react';
 import {height} from '@fortawesome/free-solid-svg-icons/fa0';
 import * as Animatable from 'react-native-animatable';
-const About = () => {
+const About = ({navigation}) => {
   return (
     <ScrollView contentContainerStyle={styles.scrollView}>
       <View style={styles.View}>

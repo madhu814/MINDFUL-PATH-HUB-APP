@@ -1,12 +1,7 @@
 import React from 'react';
 
-
-
-// Then use it in the ImageBackground component
-
-
-import { StyleSheet, View, Text,  FlatList, TouchableOpacity,Image} from 'react-native';
-
+import { StyleSheet, View, Text,  FlatList, TouchableOpacity,Image,navigate,navigation} from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 
 const data = [
@@ -18,7 +13,7 @@ const data = [
   { id: '6', title: 'Marriage Counselling', image: require('../assets/images/MarriageCounseling.jpg') },
 ];
 
-const Therapy = () => {
+const Therapy = ({navigation}) => {
 
   const renderItem = ({ item }) => (
     <TouchableOpacity style={styles.item}>
@@ -41,19 +36,18 @@ const Therapy = () => {
       />
   
     
-    <View style={styles.footer}>
-    <Text style={styles.footerText}>Home</Text>
-    <Text style={styles.footerText}>Search</Text>
-    <TouchableOpacity onPress={() => navigation.navigate('Review')}>
-      <Text style={styles.footerText}>Reviews</Text>
-    </TouchableOpacity>
-    <TouchableOpacity onPress={() => navigation.navigate('Booking')}>
-      <Text style={styles.footerText}>Booking</Text>
-    </TouchableOpacity>
-    <TouchableOpacity onPress={() => navigation.navigate('About')}>
-      <Text style={styles.footerText}>About</Text>
-    </TouchableOpacity>
-  </View>
+  <View style={styles.footer}>
+  
+  <TouchableOpacity onPress={() => navigation.navigate('Review')}>
+    <Text style={styles.footerText}>Reviews</Text>
+  </TouchableOpacity>
+  <TouchableOpacity onPress={() => navigation.navigate('Booking')}>
+    <Text style={styles.footerText}>Booking</Text>
+  </TouchableOpacity>
+  <TouchableOpacity onPress={() => navigation.navigate('About')}>
+    <Text style={styles.footerText}>About</Text>
+  </TouchableOpacity>
+</View>
   </View>
 
    );
@@ -107,7 +101,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     padding: 10,
     backgroundColor: 'purple',
-    
+    width:"100%"
   },
   footerText: {
     color: 'white',

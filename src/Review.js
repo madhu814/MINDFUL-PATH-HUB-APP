@@ -1,7 +1,7 @@
 import React from 'react';
 import {ScrollView, StyleSheet, Text, View, Image} from 'react-native';
 
-const Review = () => {
+const Review = ({navigation}) => {
   return (
     <ScrollView contentContainerStyle={styles.scrollView}>
       <View style={styles.header}>
