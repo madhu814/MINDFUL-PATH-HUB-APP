@@ -15,6 +15,7 @@ const data = [
 
 const Therapy = ({navigation}) => {
 
+ 
   const renderItem = ({ item }) => (
     <TouchableOpacity style={styles.item}>
       <Image source={item.image} style={styles.itemImage} />
@@ -23,10 +24,9 @@ const Therapy = ({navigation}) => {
   );
 
   return (
-  
+     
      
     <View style={styles.container}>
-       <Text style={styles.headingText}>Counselling and Therapies</Text>
       <FlatList
         data={data}
         renderItem={renderItem}
@@ -38,8 +38,11 @@ const Therapy = ({navigation}) => {
     
   <View style={styles.footer}>
   
+  <TouchableOpacity onPress={() => navigation.navigate('Services')}>
+    <Text style={styles.footerText}>Home</Text>
+  </TouchableOpacity>
   <TouchableOpacity onPress={() => navigation.navigate('Review')}>
-    <Text style={styles.footerText}>Reviews</Text>
+    <Text style={styles.footerText}>Review</Text>
   </TouchableOpacity>
   <TouchableOpacity onPress={() => navigation.navigate('Booking')}>
     <Text style={styles.footerText}>Booking</Text>

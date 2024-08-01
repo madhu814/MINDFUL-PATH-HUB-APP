@@ -1,11 +1,12 @@
 import React from 'react';
-import {ScrollView, StyleSheet, Text, View, Image} from 'react-native';
+import {ScrollView, StyleSheet, Text, View, Image,TouchableOpacity,navigation,navigate} from 'react-native';
+
 
 const Review = ({navigation}) => {
   return (
     <ScrollView contentContainerStyle={styles.scrollView}>
-      <View style={styles.header}>
-      <Text style={styles.header}>Reviews</Text>
+            <View style={styles.header}>
+      <Text style={styles.header}>Patient's Feed</Text>
         </View>
       <View style={styles.container}>
         <View style={styles.card}>
@@ -112,6 +113,9 @@ const Review = ({navigation}) => {
             </Text>
           </View>
         </View>
+        <TouchableOpacity style={styles.loginButton} onPress={() => navigation.navigate('CelebsExperience')}>
+        <Text style={styles.loginButtonText}>Celebs Experience 👉</Text>
+      </TouchableOpacity>
       </View>
     </ScrollView>
   );
@@ -151,6 +155,25 @@ const styles = StyleSheet.create({
   imageWrapper: {
     marginRight: 16,
   },
+  loginButton: {
+    backgroundColor: '#ff8c00',
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+    borderRadius: 8,
+    marginVertical: 10,
+    elevation:3,
+    shadowOffset:{
+        width:5,
+        height:5,
+     },
+     shadowColor: '#3333',
+     shadowOpacity: 1
+  },
+  loginButtonText: {
+    color: '#fff',
+    fontSize: 18,
+    marginHorizontal:60,
+  },
   image: {
     width: 64,
     height: 64,
@@ -175,6 +198,16 @@ const styles = StyleSheet.create({
   subtitle: {
     fontSize: 14,
     color: '#6200EE',
+  },
+  footer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    padding: 10,
+    backgroundColor: 'purple',
+    width:"100%"
+  },
+  footerText: {
+    color: 'white',
   },
 });
 

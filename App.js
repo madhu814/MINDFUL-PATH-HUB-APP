@@ -14,6 +14,7 @@ import Therapy from './src/Therapy';
 import Tabs from './src/Navigationtab';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Services from './src/Services';
+import CelebsExperience from './src/CelebsExperience';
 
 const App = () => {
   const Stack = createNativeStackNavigator();
@@ -39,12 +40,12 @@ const App = () => {
         }}>
             <Stack.Screen name="Onboarding" component={Onboarding} />
             <Stack.Screen name="Login" component={Login} />
+            <Stack.Screen name="Therapy" component={Therapy}/>
             <Stack.Screen name="Services" component={Services} />
-            <Stack.Screen name="Therapy" component={Therapy} />
-            <Stack.Screen name="Booking" component={Booking} />
             <Stack.Screen name="Review" component={Review} />
+            <Stack.Screen name="CelebsExperience" component={CelebsExperience}/>
+            <Stack.Screen name="Booking" component={Booking} />
             <Stack.Screen name="About" component={About} />
-
       </Stack.Navigator>
     </NavigationContainer>
     
