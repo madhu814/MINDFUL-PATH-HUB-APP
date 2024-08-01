@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View, ScrollView, Image} from 'react-native';
+import {StyleSheet, Text, View, ScrollView, Image,TouchableOpacity,navigate,navigation} from 'react-native';
 import React from 'react';
 import {height} from '@fortawesome/free-solid-svg-icons/fa0';
 import * as Animatable from 'react-native-animatable';
@@ -167,7 +167,9 @@ const About = ({navigation}) => {
         <Text style={styles.name2}>Government Certification
         for Therapist Training</Text>
         
-       
+        <TouchableOpacity style={styles.loginButton} onPress={() => navigation.navigate('Home')}>
+        <Text style={styles.loginButtonText}> Gallery  👉</Text>
+      </TouchableOpacity>
         
       </View>
     </ScrollView>
@@ -236,6 +238,25 @@ const styles = StyleSheet.create({
     marginBottom: 21,
     alignSelf: 'center',
     justifyContent: 'center',
+  },
+  loginButton: {
+    backgroundColor: '#ff8c00',
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+    borderRadius: 8,
+    marginVertical: 10,
+    elevation:3,
+    shadowOffset:{
+        width:5,
+        height:5,
+     },
+     shadowColor: '#3333',
+     shadowOpacity: 1
+  },
+  loginButtonText: {
+    color: '#fff',
+    fontSize: 18,
+    marginHorizontal:60,
   },
   name2: {
     fontSize: 30,
