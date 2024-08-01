@@ -113,6 +113,7 @@ const Review = ({navigation}) => {
             </Text>
           </View>
         </View>
+        
         <TouchableOpacity style={styles.loginButton} onPress={() => navigation.navigate('CelebsExperience')}>
         <Text style={styles.loginButtonText}>Celebs Experience 👉</Text>
       </TouchableOpacity>
