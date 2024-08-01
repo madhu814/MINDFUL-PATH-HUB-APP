@@ -1,11 +1,12 @@
 import React from 'react';
 import {ScrollView, StyleSheet, Text, View, Image,TouchableOpacity,navigation} from 'react-native';
+import Therapy from './Therapy';
 
 const Services = () => {
   return (
     <ScrollView contentContainerStyle={styles.scrollView}>
       <View style={styles.header}>
-      <Text style={styles.header}> Our Services</Text>
+      <Text style={styles.header}>Our Services</Text>
         </View>
       <View style={styles.container}>
         <View style={styles.card}>
@@ -36,8 +37,6 @@ const Services = () => {
             <Text style={styles.title}>THERAPY FOR SHORT TERM/ LONG STANDING DISEASES </Text>
             <Text style={styles.subtitle}>
             Your path to wellbeing starts here. Address the root cause to regain your body-mind-soul harmony. With over 1000 testimonials, Vior has helped patients cure several diseases related to Skin & Hair, Respiratory/ Circulatory issues, Digestion, Sleep, Immunity, Joint/muscle, Chronic conditions, Nervous system disorders, Urinary issues, Hormonal regulation etc.
-
-
             </Text>
           </View>
           </View>
@@ -53,13 +52,10 @@ const Services = () => {
             <Text style={styles.title}>   THERAPY FOR COUPLES-</Text>
             <Text style={styles.subtitle}>
             Two individual Therapy sessions for both partners and ten-hours group session for the couple to understand emotional and behavioural patterns. Enrol to explore deeper understanding of each other's behaviour and emotions and connect with deeper mutual understanding. It’s not the absence of conflict that makes a relationship healthy, it’s the way couples manage the conflict that matters.
-
             </Text>
           </View>
         </View>
-        <TouchableOpacity style={styles.therapyButton} onPress={() => navigation.navigate('Therapy')}>
-        <Text style={styles.therapyButtonText}>     Click here for Specific Therapies</Text>
-      </TouchableOpacity>
+       
     </ScrollView>
   );
 };
