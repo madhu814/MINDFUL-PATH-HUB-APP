@@ -128,6 +128,48 @@ const About = ({navigation}) => {
           treatment.
         </Text>
       </View>
+      <View style={styles.Viewvalues}>
+        <Text style={styles.name3}>Our Values</Text>
+        <Image
+          source={require('../assets/images/1.png')}
+          style={styles.image3}
+        />
+        <Text style={styles.name2}>100%
+        Confidentiality</Text>
+        <Image
+          source={require('../assets/images/2.png')}
+          style={styles.image3}
+        />
+        <Text style={styles.name2}>Holistic
+        Healing</Text>
+        <Image
+          source={require('../assets/images/3.png')}
+          style={styles.image3}
+        />
+        <Text style={styles.name2}>Natural
+        Non-addictive remedies</Text>
+        <Image
+          source={require('../assets/images/4.png')}
+          style={styles.image3}
+        />
+        <Text style={styles.name2}>100%
+        Safe</Text>
+        <Image
+          source={require('../assets/images/5.png')}
+          style={styles.image3}
+        />
+        <Text style={styles.name2}>Highest Quality
+        (Imported from UK)</Text>
+        <Image
+          source={require('../assets/images/6.png')}
+          style={styles.image3}
+        />
+        <Text style={styles.name2}>Government Certification
+        for Therapist Training</Text>
+        
+       
+        
+      </View>
     </ScrollView>
   );
 };
@@ -148,6 +190,13 @@ const styles = StyleSheet.create({
   View: {
     flex: 1,
     marginHorizontal: 0,
+    maxHeight: 'auto',
+    backgroundColor: 'white',
+  },
+  Viewvalues: {
+    flex: 1,
+    marginHorizontal: 0,
+    flexWrap:"wrap",
     maxHeight: 'auto',
     backgroundColor: 'white',
   },
