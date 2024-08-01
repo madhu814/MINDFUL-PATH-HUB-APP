@@ -15,6 +15,7 @@ import Tabs from './src/Navigationtab';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Services from './src/Services';
 import CelebsExperience from './src/CelebsExperience';
+import Home from './src/Home';
 
 const App = () => {
   const Stack = createNativeStackNavigator();
@@ -46,6 +47,8 @@ const App = () => {
             <Stack.Screen name="CelebsExperience" component={CelebsExperience}/>
             <Stack.Screen name="Booking" component={Booking} />
             <Stack.Screen name="About" component={About} />
+
+            <Stack.Screen name="Home" component={Home} />
       </Stack.Navigator>
     </NavigationContainer>
     
