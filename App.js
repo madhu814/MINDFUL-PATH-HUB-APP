@@ -16,6 +16,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import Services from './src/Services';
 import CelebsExperience from './src/CelebsExperience';
 import Home from './src/Home';
+import CreditsScreen from './src/CreditsScreen';
 
 const App = () => {
   const Stack = createNativeStackNavigator();
@@ -35,10 +36,11 @@ const App = () => {
     
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="Onboarding"
+        initialRouteName="CreditsScreen"
         screenOptions={{
           headerShown: false,
         }}>
+            <Stack.Screen name="CreditsScreen" component={CreditsScreen} />
             <Stack.Screen name="Onboarding" component={Onboarding} />
             <Stack.Screen name="Login" component={Login} />
             <Stack.Screen name="Therapy" component={Therapy}/>
@@ -49,6 +51,7 @@ const App = () => {
             <Stack.Screen name="About" component={About} />
 
             <Stack.Screen name="Home" component={Home} />
+            
       </Stack.Navigator>
     </NavigationContainer>
     

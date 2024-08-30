@@ -15,6 +15,7 @@ const data = [
 
 const Therapy = ({navigation}) => {
 
+
  
   const renderItem = ({ item }) => (
     <TouchableOpacity style={styles.item}>
@@ -27,6 +28,7 @@ const Therapy = ({navigation}) => {
      
      
     <View style={styles.container}>
+      <View><Text style={styles.footerText}>Counselling and Therapy</Text></View>
       <FlatList
         data={data}
         renderItem={renderItem}

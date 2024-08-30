@@ -160,17 +160,13 @@ const About = ({navigation}) => {
         />
         <Text style={styles.name2}>Highest Quality
         (Imported from UK)</Text>
-        <Image
-          source={require('../assets/images/6.png')}
-          style={styles.image3}
-        />
-        <Text style={styles.name2}>Government Certification
-        for Therapist Training</Text>
+        
         
         <TouchableOpacity style={styles.loginButton} onPress={() => navigation.navigate('Home')}>
         <Text style={styles.loginButtonText}> Gallery  👉</Text>
       </TouchableOpacity>
         
+      
       </View>
     </ScrollView>
   );
@@ -247,8 +243,8 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     elevation:3,
     shadowOffset:{
-        width:5,
-        height:5,
+        width:20,
+        height:20,
      },
      shadowColor: '#3333',
      shadowOpacity: 1
